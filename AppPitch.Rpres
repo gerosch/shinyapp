@@ -1,0 +1,55 @@
+Trajectory of a projectile
+========================================================
+author: Gero Schmidt
+date: `r format(Sys.Date(), format="%B %d, %Y")`
+transition: zoom
+
+**Apps to Promote STEM education**
+
+<small> 
+A presentation to pitch the app "Trajectory of a projectile"
+created as course project of the "Developing Data Products" course
+and part of the "Data Science Spezialization" on Coursera.
+</small>
+
+Why?
+========================================================
+
+Promoting *science, technology, engineering, and mathematics* (**STEM**) education is one of the major responsibilties of our society and our future.
+
+* Apps easily illustrate complicated STEM topics
+* Creating apps makes learning STEM topics fun
+* Developing apps promotes students' coding abilities
+
+Our economy depends on availability of appropriate skills in 
+science, technology, engineering, and mathematics.
+
+
+How?
+========================================================
+
+Today's access to computers, services, and tools allow easy development of apps that can address STEM topics. Tools are available to help with easy development of apps.
+
+- *RStudio* and *R* provide basics to address STEM topics
+- Packages like *shiny* allow easy app development
+- Services like *ShinyApps.io* allow easy app deployment 
+  by hosting apps as *platform as a service* (PaaS) on the web
+- Tools are available for private use at no cost
+
+
+Example
+========================================================
+
+![App Screenshot](image.png)
+
+Demo at http://gerosch.shinyapps.io/shinyapp .
+
+Numbers
+========================================================
+
+```{r, echo=FALSE}
+x<-c(22,24,28.5,8.5)
+labs<-c("1972-77","1982-87","1992-97","2000-2005")
+barplot(x, names.arg=labs,col="blue", xlab="Years", ylab="Percentage", main="Top Performing High School Students who Major in STEM")
+```
+<small>Plot created in R using `r length(x)` numbers taken from http://teach.com/why-teach/the-demand-for-great-teachers/stem-teachers-infographic</small>
